@@ -1,0 +1,6 @@
+{
+  "server": "{ServerUrl}",
+  "type": "BasicHttps",
+  "username": "{Username}",
+  "password": "{Password}"
+}
