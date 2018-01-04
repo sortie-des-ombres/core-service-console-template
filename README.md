@@ -34,3 +34,30 @@ Progrma usage options:
 
   --help                 Display this help screen.
 ```
+
+## Currently Exposed Functions from the Core Service
+
+```csharp
+var component = service.Get<ComponentData>("{TcmId or Webdav Path}");
+
+var componentList = service.GetList<ComponentData>("{TcmId or Webdav Path}");
+
+var schemaFields = service.ReadSchemaFields("{TcmId or Webdav Path}");
+
+var componentDefaultData = service.GetDefaultData<ComponentData>(ItemType.Component, "{TcmId or Webdav Path}");
+
+var checkedInComponent = service.CheckIn<VersionedItemData>("{TcmId or Webdav Path}");
+
+var savedComponent = service.Save(component);
+
+var checkedOutComponent = service.CheckOut<VersionedItemData>("{TcmId or Webdav Path}", true);
+
+var existing = service.IsExistingObject("{TcmId or Webdav Path}");
+
+var keywordListFromKey = service.FindKeywordFromKey("keyword-key", "{TcmId or Webdav Path}");
+
+var keywordListFromTitle = service.FindKeywordFromTitle("Keyword Title", "{TcmId or Webdav Path}");
+
+service.Delete("{TcmId or Webdav Path}");
+
+```
