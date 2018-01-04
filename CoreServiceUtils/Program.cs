@@ -21,7 +21,7 @@ namespace CoreServiceUtils
 
             var parser = new CommandLine.Parser(s =>
             {
-                s.IgnoreUnknownArguments = true;
+                s.IgnoreUnknownArguments = false;
             });
 
 
@@ -37,6 +37,10 @@ namespace CoreServiceUtils
                     Console.ReadKey();
                 }
 
+            }
+            else
+            {
+                Writer.Write(programOptions.GetUsage());
             }
 
         }

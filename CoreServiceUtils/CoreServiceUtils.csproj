@@ -70,7 +70,6 @@
     <Compile Include="Extensions\JsonExtensions.cs" />
     <Compile Include="Extensions\TcmExtensions.cs" />
     <Compile Include="Extensions\WcfExtensions.cs" />
-    <Compile Include="Helpers\CsvProcessHelper.cs" />
     <Compile Include="Helpers\TridionHelper.cs" />
     <Compile Include="Interfaces\IHostWriter.cs" />
     <Compile Include="Interfaces\ITridionClientService.cs" />
@@ -99,21 +98,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config" />
-    <None Include="Samples\icon-keyword.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Samples\icon-keyword-configuration.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Samples\rollback-configuration.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Samples\migration-configuration.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="Samples\migration-schema-map.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
+    <None Include="Samples\server-configuration.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
